@@ -4,6 +4,7 @@ pkgs.mkShell {
   packages = [
     pkgs.nodejs_23
     pkgs.geany
+    pkgs.nodePackages."@angular/cli"
   ];
 
   # Add environment variables
@@ -11,6 +12,6 @@ pkgs.mkShell {
 
   # Load custom bash code
   shellHook = ''
-    export PS1="(backend) $PS1"
+    export PS1="(frontend) $PS1"
   '';
 }

@@ -4,7 +4,6 @@ pkgs.mkShell {
   packages = [
     pkgs.nodejs_23
     pkgs.geany
-    pkgs.nodePackages."@angular/cli"
   ];
 
   # Add environment variables
